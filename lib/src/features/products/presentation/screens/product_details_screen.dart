@@ -188,6 +188,8 @@ class AddToFavoritesButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = context.l10n;
+
     return FloatingActionButton.extended(
       onPressed: () {
         final isFavorite =
@@ -199,7 +201,7 @@ class AddToFavoritesButton extends ConsumerWidget {
             ..showSnackBar(
               SnackBar(
                 content: Text(
-                  'El producto ${product.title} ya está en la lista de favoritos.',
+                  l10n.productInFavorites(product.title),
                 ),
                 duration: const Duration(
                   seconds: 2,
@@ -224,7 +226,7 @@ class AddToFavoritesButton extends ConsumerWidget {
             );
         }
       },
-      label: const Text('Add to favorites'),
+      label: Text(l10n.addToFavorites),
       icon: const Icon(Icons.favorite),
     );
   }

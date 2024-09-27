@@ -17,6 +17,20 @@
     "id": "ID",
     "gender": "Género",
     "nothingOnFavorites": "No tienes productos en favoritos",
-    "favorites": "Favoritos"
+    "favorites": "Favoritos",
+    "productInFavorites": "El producto {productTitle} ya está en tu lista de favoritos.",
+    "@productInFavorites": {
+        "description": "Un mensaje que muestra que el producto ya está en la lista de favoritos",
+        "placeholders": {
+            "productTitle": {
+                "type": "String",
+                "example": "Smartphone X"
+            }
+        }
+    },
+    "addToFavorites": "Añadir a favoritos",
+    "marketplace": "Marketplace",
+    "noProductsFound": "No se encontraron productos",
+    "productsList":"Lista de productos"
     
 }

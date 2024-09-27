@@ -57,4 +57,21 @@ class AppLocalizationEn extends AppLocalization {
 
   @override
   String get favorites => 'Wishlist';
+
+  @override
+  String productInFavorites(String productTitle) {
+    return 'The product $productTitle is already in your favorites list.';
+  }
+
+  @override
+  String get addToFavorites => 'Añadir a favoritos';
+
+  @override
+  String get marketplace => 'Marketplace';
+
+  @override
+  String get noProductsFound => 'No se encontraron productos';
+
+  @override
+  String get productsList => 'Lista de productos';
 }

@@ -1,3 +1,4 @@
+import 'package:dummy_json_app/core/extensions/localizations_extension.dart';
 import 'package:dummy_json_app/src/features/products/domain/entities/product_entity.dart';
 import 'package:dummy_json_app/src/features/products/presentation/delegates/search_product_delegate.dart';
 import 'package:dummy_json_app/src/features/products/presentation/providers/search_products_provider.dart';
@@ -11,6 +12,7 @@ class CustomAppBar extends ConsumerWidget {
   Widget build(BuildContext context, ref) {
     final colors = Theme.of(context).colorScheme;
     final titleStyle = Theme.of(context).textTheme.titleMedium;
+    final l10n = context.l10n;
 
     return SafeArea(
       bottom: false,
@@ -23,7 +25,7 @@ class CustomAppBar extends ConsumerWidget {
               color: colors.primary,
             ),
             const SizedBox(width: 8.0),
-            Text('Marketplace', style: titleStyle),
+            Text(l10n.marketplace, style: titleStyle),
             const Spacer(),
             IconButton(
               icon: Icon(
@@ -45,7 +47,6 @@ class CustomAppBar extends ConsumerWidget {
                   ),
                 ).then((product) {
                   if (product == null) return;
-                  // context.push('/home/0/movie/${movie.id}');
                 });
               },
             )

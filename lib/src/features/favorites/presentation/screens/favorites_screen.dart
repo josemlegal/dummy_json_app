@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:dummy_json_app/core/extensions/localizations_extension.dart';
 import 'package:dummy_json_app/src/features/favorites/presentation/providers/favorites_provider.dart';
 import 'package:dummy_json_app/src/features/products/domain/entities/product_entity.dart';
 import 'package:dummy_json_app/src/features/products/presentation/screens/screens.dart';
@@ -17,13 +18,15 @@ class FavoritesScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final favoritesNotifier = ref.watch(favoritesNotifierProvider);
 
+    final l10n = context.l10n;
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Favorites'),
+        title: Text(l10n.favorites),
       ),
       body: favoritesNotifier.isEmpty
-          ? const Center(
-              child: Text('No tienes nada agregado a favoritos'),
+          ? Center(
+              child: Text(l10n.nothingOnFavorites),
             )
           : FavoritesList(favoritesNotifier: favoritesNotifier),
     );

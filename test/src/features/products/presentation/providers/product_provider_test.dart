@@ -55,8 +55,6 @@ void main() {
     test('''The provider should have an AsyncLoading state when init
     and a List<ProductEntity> when finish
     ''', () async {
-      const mockError = ApiException(message: 'Error');
-
       await setupRepository();
 
       final container = ProviderContainer(

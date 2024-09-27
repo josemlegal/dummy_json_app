@@ -200,6 +200,36 @@ abstract class AppLocalization {
   /// In es, this message translates to:
   /// **'Favoritos'**
   String get favorites;
+
+  /// Un mensaje que muestra que el producto ya está en la lista de favoritos
+  ///
+  /// In es, this message translates to:
+  /// **'El producto {productTitle} ya está en tu lista de favoritos.'**
+  String productInFavorites(String productTitle);
+
+  /// No description provided for @addToFavorites.
+  ///
+  /// In es, this message translates to:
+  /// **'Añadir a favoritos'**
+  String get addToFavorites;
+
+  /// No description provided for @marketplace.
+  ///
+  /// In es, this message translates to:
+  /// **'Marketplace'**
+  String get marketplace;
+
+  /// No description provided for @noProductsFound.
+  ///
+  /// In es, this message translates to:
+  /// **'No se encontraron productos'**
+  String get noProductsFound;
+
+  /// No description provided for @productsList.
+  ///
+  /// In es, this message translates to:
+  /// **'Lista de productos'**
+  String get productsList;
 }
 
 class _AppLocalizationDelegate extends LocalizationsDelegate<AppLocalization> {

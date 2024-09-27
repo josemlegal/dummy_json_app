@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:dummy_json_app/core/extensions/fp_async_value.dart';
+import 'package:dummy_json_app/core/extensions/localizations_extension.dart';
 import 'package:dummy_json_app/src/features/products/domain/entities/product_entity.dart';
 import 'package:dummy_json_app/src/features/products/presentation/providers/products_provider.dart';
 import 'package:dummy_json_app/src/features/products/presentation/screens/product_details_screen.dart';
@@ -20,6 +21,8 @@ class ProductsListScreen extends ConsumerWidget {
     final products = ref.watch(
       getAllProductsProvider,
     );
+
+    final l10n = context.l10n;
 
     return products.mapEither(
       data: (data) {
@@ -50,7 +53,7 @@ class ProductsListScreen extends ConsumerWidget {
       },
       error: (error) => Scaffold(
         appBar: AppBar(
-          title: const Text('Products List'),
+          title: Text(l10n.productsList),
           backgroundColor: Colors.deepPurple,
         ),
         body: Center(
