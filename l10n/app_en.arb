@@ -1,0 +1,21 @@
+{
+    "@@locale": "en",
+    "productNotFound": "Product not found",
+    "price": "Price",
+    "rating": "Rating",
+    "stock": "Stock",
+    "brand": "Brand",
+    "discount": "Discount",
+    "category": "Category",
+    "profile": "Profile",
+    "years": "years",
+    "contactInfo": "Contact information",
+    "email": "Email",
+    "phone": "Phone",
+    "personalInfo": "Personal information",
+    "birthdate": "Birthdate",
+    "id": "ID",
+    "gender": "Gender",
+    "nothingOnFavorites": "You don't have any products on favorites",
+    "favorites": "Wishlist"
+}

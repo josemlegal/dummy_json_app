@@ -1,0 +1,22 @@
+{
+    "@@locale": "es",
+    "productNotFound": "Producto no encontrado",
+    "price": "Precio",
+    "rating": "Valoración",
+    "stock": "Stock",
+    "brand": "Marca",
+    "discount": "Descuento",
+    "category": "Categoría",
+    "profile": "Perfil",
+    "years": "años",
+    "contactInfo": "Información de contacto",
+    "email": "Email",
+    "phone": "Tel",
+    "personalInfo": "Información personal",
+    "birthdate": "Fecha de nacimiento",
+    "id": "ID",
+    "gender": "Género",
+    "nothingOnFavorites": "No tienes productos en favoritos",
+    "favorites": "Favoritos"
+    
+}
