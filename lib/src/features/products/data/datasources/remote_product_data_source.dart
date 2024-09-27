@@ -18,7 +18,7 @@ class RemoteProductDatasource extends ProductDataSource {
       fromJsonFunction: ProductListModel.fromJson,
       queryParameters: {
         'skip': 0,
-        'limit': 0,
+        'limit': 30,
       },
     );
 

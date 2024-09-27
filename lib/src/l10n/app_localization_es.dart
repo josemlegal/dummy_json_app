@@ -59,11 +59,6 @@ class AppLocalizationEs extends AppLocalization {
   String get favorites => 'Favoritos';
 
   @override
-  String productInFavorites(String productTitle) {
-    return 'El producto $productTitle ya está en tu lista de favoritos.';
-  }
-
-  @override
   String get addToFavorites => 'Añadir a favoritos';
 
   @override
@@ -74,4 +69,17 @@ class AppLocalizationEs extends AppLocalization {
 
   @override
   String get productsList => 'Lista de productos';
+
+  @override
+  String get productRemoved => 'The product has been removed from the favorites list.';
+
+  @override
+  String productInFavorites(Object productTitle) {
+    return 'El producto $productTitle ya está en tu lista de favoritos.';
+  }
+
+  @override
+  String productAddedInFavorites(Object productTitle) {
+    return 'El producto $productTitle se ha añadido a favoritos.';
+  }
 }

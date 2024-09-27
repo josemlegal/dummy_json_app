@@ -161,6 +161,8 @@ class FavoriteButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = context.l10n;
+
     return IconButton(
       icon: const Icon(
         Icons.favorite,
@@ -173,8 +175,8 @@ class FavoriteButton extends ConsumerWidget {
           ..clearSnackBars()
           ..showSnackBar(
             SnackBar(
-              content: const Text(
-                'El producto ha sido eliminado de la lista de favoritos.',
+              content: Text(
+                l10n.productRemoved,
               ),
               duration: const Duration(
                 seconds: 1,

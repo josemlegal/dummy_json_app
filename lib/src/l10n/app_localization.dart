@@ -201,12 +201,6 @@ abstract class AppLocalization {
   /// **'Favoritos'**
   String get favorites;
 
-  /// Un mensaje que muestra que el producto ya está en la lista de favoritos
-  ///
-  /// In es, this message translates to:
-  /// **'El producto {productTitle} ya está en tu lista de favoritos.'**
-  String productInFavorites(String productTitle);
-
   /// No description provided for @addToFavorites.
   ///
   /// In es, this message translates to:
@@ -230,6 +224,24 @@ abstract class AppLocalization {
   /// In es, this message translates to:
   /// **'Lista de productos'**
   String get productsList;
+
+  /// No description provided for @productRemoved.
+  ///
+  /// In es, this message translates to:
+  /// **'The product has been removed from the favorites list.'**
+  String get productRemoved;
+
+  /// No description provided for @productInFavorites.
+  ///
+  /// In es, this message translates to:
+  /// **'El producto {productTitle} ya está en tu lista de favoritos.'**
+  String productInFavorites(Object productTitle);
+
+  /// No description provided for @productAddedInFavorites.
+  ///
+  /// In es, this message translates to:
+  /// **'El producto {productTitle} se ha añadido a favoritos.'**
+  String productAddedInFavorites(Object productTitle);
 }
 
 class _AppLocalizationDelegate extends LocalizationsDelegate<AppLocalization> {

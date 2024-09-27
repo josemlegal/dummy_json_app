@@ -66,7 +66,6 @@ class MockProductDatasource extends ProductDataSource {
 
   @override
   Future<List<ProductEntity>> searchProducts(String query) {
-    // TODO: implement searchProducts
     throw UnimplementedError();
   }
 }

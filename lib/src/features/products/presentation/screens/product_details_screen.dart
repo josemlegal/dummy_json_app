@@ -216,7 +216,7 @@ class AddToFavoritesButton extends ConsumerWidget {
             ..showSnackBar(
               SnackBar(
                 content: Text(
-                  'El producto ${product.title} ha sido añadido a la lista de favoritos.',
+                  l10n.productAddedInFavorites(product.title),
                 ),
                 duration: const Duration(
                   seconds: 2,

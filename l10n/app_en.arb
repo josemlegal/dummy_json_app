@@ -19,19 +19,10 @@
     "nothingOnFavorites": "You don't have any products on favorites",
     "favorites": "Wishlist",
     "productInFavorites": "The product {productTitle} is already in your favorites list.",
-    "@productInFavorites": {
-    "description": "Un mensaje que muestra que el producto ya está en la lista de favoritos",
-    "placeholders": {
-      "productTitle": {
-        "type": "String",
-        "example": "Smartphone X"
-      }
-    },
+    "productAddedInFavorites": "The product {productTitle} has been added to favorites.",
     "addToFavorites": "Add to favorites",
     "marketplace": "Marketplace",
     "noProductsFound": "No products found",
     "productsList":"Products list",
-
-    
-  }
+    "productRemoved": "The product has been removed from the favorites list."
 }
